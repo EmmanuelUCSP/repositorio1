@@ -6,6 +6,7 @@
 int main()
 {
     //Antes de usar una variable tengo que declararla
+    //hola
     int x;
     int y;
     int a;
