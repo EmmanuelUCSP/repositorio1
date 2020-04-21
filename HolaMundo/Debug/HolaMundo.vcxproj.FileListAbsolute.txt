@@ -1,0 +1,2 @@
+C:\Users\EMMANUEL\Source\Repos\repositorio1\HolaMundo\Debug\HolaMundo.exe
+C:\Users\EMMANUEL\Source\Repos\repositorio1\HolaMundo\Debug\HolaMundo.pdb

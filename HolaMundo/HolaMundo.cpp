@@ -2,38 +2,88 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    //Antes de usar una variable tengo que declararla
-    int x;
-    int y;
-    int a;
-    int b;
-    int c;
+    //Ejercicio 2.16
+    int x, y;
 
-    //Despues de declarar la variable ya puedo usarla
-    std::cout << "Ingresa el valor de x: ";
-    std::cin >> x;
-    std::cout << "Ingresa el valor de y: "; 
-    std::cin >> y;
-    a = x + y;
-    b = x - y;
-    c = x * y;
+    cout << "Ingresa el valor de x: ";
+    cin >> x;
+    cout << "Ingresa el valor de y: ";
+    cin >> y;
+    int suma = x + y;
+    int resta = x - y;
+    int multi = x * y;
+    int cosciente = x / y;
 
-    std::cout << "El resultado de x + y es: " << a << std::endl;
-    std::cout << "El resultado de x - y es: " << b << std::endl;
-    std::cout << "El resultado de x multiplicado por y es: " << c << std::endl;
+    cout << "El resultado de x + y es: " << suma << std::endl;
+    cout << "El resultado de x - y es: " << resta << std::endl;
+    cout << "El resultado de x multiplicado por y es: " << multi << std::endl;
+    cout << "El resultado de x / y es: " << cosciente << std::endl;
+
+    //Ejercicio 2.17
+
+    //Ejercicio 2.18:
+    int variable1, variable2;
+
+    cout << "Ingresa un número: ";
+    cin >> variable1;
+    cout << "Ingresa otro número: ";
+    cin >> variable2;
+
+    if (variable1 > variable2)
+        cout << "Es el mayor" << variable1 << endl;
+    if (variable1 < variable2)
+        cout << "Es el mayor" << variable2 << endl;
+    else {
+        cout << "Los números son iguales" << endl;
+    }
+
+    //Ejercicio 2.19
+    int primer, segundo, tercer;
+
+    cout << "Ingresa un primer número: ";
+    cin >> primer;
+    cout << "Ingresa un segundo número: ";
+    cin >> segundo;
+    cout << "Ingresa un tercer número: ";
+    cin >> tercer;
+
+    int sumatotal = primer + segundo + tercer;
+    int promedio = sumatotal / 3;
+    int restatotal = primer - segundo - tercer;
+    if (primer > segundo) {
+        if (primer > tercer) {
+            cout << "Es el numero mas grande" << primer << endl;
+            if (segundo > tercer) {
+                cout << "Es el número mas pequeño" << tercer << endl;
+            }
+            else {
+                cout << "Es el número mas pequeño" << segundo << endl;
+            }
+        }
+        else {
+            cout << "Es el numero mas grande" << tercer << endl;
+            cout << "Es el número mas pequeño" << segundo <<endl;
+        }
+    }
+    if (segundo > tercer) {
+        cout << "Es el número mas grande" << segundo << endl;
+        if (primer > tercer) {
+            cout << "Es el número mas pequeño" << tercer << endl;
+        }
+    }
+    else {
+        cout << "Es el número mas grande" << tercer <<endl;
+        cout << "Es el número mas pequeño" << primer << endl;
+    }
+
+    //Ejercicio 
+
+
+   
 
     return 0;
 }
-
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
-
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
