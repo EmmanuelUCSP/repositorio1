@@ -80,7 +80,13 @@ int main()
         cout << "Es el número mas pequeño" << primer << endl;
     }
 
-    //Ejercicio 
+    //Ejercicio 2.27:
+
+    char ch;
+    cout << "Enter a character:" << endl;
+    cin >> ch;
+
+    cout << static_cast<int>(ch) << endl;
 
 
 
